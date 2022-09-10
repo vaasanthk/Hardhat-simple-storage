@@ -1,7 +1,7 @@
 const { ethers } = require("hardhat")
 const { assert } = require("chai")
 
-describe("SimpleStorage", async function () {
+describe("SimpleStorage", function () {
   let SimpleStorageFactory, simpleStorage
 
   beforeEach(async function () {
