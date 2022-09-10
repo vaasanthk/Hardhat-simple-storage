@@ -124,5 +124,11 @@ However, you can manual verify with:
 ```
 yarn hardhat verify ----constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS or npx hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
 ```
+Verify Polygon 
+```
+yarn hardhat verify CONTRACT_ADDR --network mumbai or npx hardhat verify CONTRACT_ADDR --network mumbai
+
+
+```
 
 # Thank you!
