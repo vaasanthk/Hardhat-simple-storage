@@ -3,6 +3,7 @@ require("dotenv").config()
 require("@nomiclabs/hardhat-waffle")
 require("hardhat-gas-reporter")
 require("solidity-coverage")
+require("@nomiclabs/hardhat-etherscan")
 
 /** @type import('hardhat/config').HardhatUserConfig */
 
@@ -26,7 +27,13 @@ COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || "key"
 module.exports = {
   solidity: "0.8.9",
 
+  defaultNetwork: "hardhat",
+
   networks: {
+    localhost: {
+      url: "http://localhost:8545",
+      chainId: 31337,
+    },
     rinkeby: {
       url: RINKEBY_RPC_URL,
       accounts: [RINKEBY_PRIVATE_KEY],
@@ -57,7 +64,7 @@ module.exports = {
     currency: "USD",
     outputFile: "gas-report.txt",
     noColors: true,
-    // coinmarketcap: COINMARKETCAP_API_KEY,
+    coinmarketcap: COINMARKETCAP_API_KEY,
     // token: "MATIC",
   },
 }
