@@ -26,16 +26,27 @@ A demonstration of working with hardhat framework, deploying contracts and testi
 
 - [Node.js](https://nodejs.org/en/)
 - [Solidity](https://docs.soliditylang.org/en/v0.8.15/)
+- 
 
 ## Setup
 
 Clone this repo
 
 ```
-git clone https://github.com/vaasanthk/hardhat-simple-storage
-cd hardhat-simple-storage
+git clone https://github.com/PatrickAlphaC/hardhat-simple-storage-fcc
+
+cd hardhat-simple-storage-fcc
+yarn
+yarn typechain
 ```
 
+## Typescript
+
+For the typescript edition, run:
+
+```
+git checkout typescript
+```
 Then install dependencies
 
 ```
