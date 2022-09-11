@@ -26,7 +26,6 @@ A demonstration of working with hardhat framework, deploying contracts and testi
 
 - [Node.js](https://nodejs.org/en/)
 - [Solidity](https://docs.soliditylang.org/en/v0.8.15/)
-- 
 
 ## Setup
 
