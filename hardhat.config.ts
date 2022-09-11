@@ -1,9 +1,9 @@
-require("@nomicfoundation/hardhat-toolbox")
-require("dotenv").config()
-require("@nomiclabs/hardhat-waffle")
-require("hardhat-gas-reporter")
-require("solidity-coverage")
-require("@nomiclabs/hardhat-etherscan")
+import "@nomicfoundation/hardhat-toolbox"
+import "dotenv/config"
+import "@nomiclabs/hardhat-waffle"
+import "hardhat-gas-reporter"
+import "solidity-coverage"
+import "@nomiclabs/hardhat-etherscan"
 
 /** @type import('hardhat/config').HardhatUserConfig */
 
@@ -12,17 +12,17 @@ const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL || "https://eth-rinkeby"
 const RINKEBY_PRIVATE_KEY = process.env.RINKEBY_PRIVATE_KEY || "0xkey"
 
 // goerli testnet
-GOERLI_RPC_URL = process.env.GOERLI_RPC_URL || "https://eth-rinkeby"
-GOERLI_PRIVATE_KEY = process.env.GOERLI_PRIVATE_KEY || "0xkey"
+const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL || "https://eth-rinkeby"
+const GOERLI_PRIVATE_KEY = process.env.GOERLI_PRIVATE_KEY || "0xkey"
 
 // polygon testnet
-POLYGON_RPC_URL = process.env.POLYGON_RPC_URL || "https://eth-rinkeby"
-POLYGON_PRIVATE_KEY = process.env.POLYGON_PRIVATE_KEY || "0xkey"
+const POLYGON_RPC_URL = process.env.POLYGON_RPC_URL || "https://eth-rinkeby"
+const POLYGON_PRIVATE_KEY = process.env.POLYGON_PRIVATE_KEY || "0xkey"
 
-ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "key"
-POLYGONSCAN_API_KEY = process.env.POLYGONSCAN_API_KEY || "key"
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "key"
+const POLYGONSCAN_API_KEY = process.env.POLYGONSCAN_API_KEY || "key"
 
-COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || "key"
+const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || "key"
 
 module.exports = {
   solidity: "0.8.9",
