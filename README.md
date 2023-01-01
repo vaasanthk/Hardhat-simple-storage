@@ -46,6 +46,7 @@ For the typescript edition, run:
 ```
 git checkout typescript
 ```
+
 Then install dependencies
 
 ```
@@ -65,7 +66,7 @@ yarn hardhat compile or npx hardhat compile
 Deploy:
 
 ```
- yarn hardhat run scripts/deploy.js or npx hardhat run scripts/deploy.js
+ yarn hardhat run scripts/deploy.ts or npx hardhat run scripts/deploy.ts
 ```
 
 Testing:
@@ -134,7 +135,9 @@ However, you can manual verify with:
 ```
 yarn hardhat verify ----constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS or npx hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
 ```
-Verify Polygon 
+
+Verify Polygon
+
 ```
 yarn hardhat verify CONTRACT_ADDR --network mumbai or npx hardhat verify CONTRACT_ADDR --network mumbai
 

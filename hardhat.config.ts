@@ -7,10 +7,6 @@ import "@nomiclabs/hardhat-etherscan"
 
 /** @type import('hardhat/config').HardhatUserConfig */
 
-// rinkeby testnet
-const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL || "https://eth-rinkeby"
-const RINKEBY_PRIVATE_KEY = process.env.RINKEBY_PRIVATE_KEY || "0xkey"
-
 // goerli testnet
 const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL || "https://eth-rinkeby"
 const GOERLI_PRIVATE_KEY = process.env.GOERLI_PRIVATE_KEY || "0xkey"
@@ -33,11 +29,6 @@ module.exports = {
     localhost: {
       url: "http://localhost:8545",
       chainId: 31337,
-    },
-    rinkeby: {
-      url: RINKEBY_RPC_URL,
-      accounts: [RINKEBY_PRIVATE_KEY],
-      chainId: 4,
     },
     goerli: {
       url: GOERLI_RPC_URL,
